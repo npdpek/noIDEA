@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(32, 124, 245);
+}
+
+body {
+  font-size: 100%;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  color: #555;
+  background-color: #eee;
+}
+#music{
+  background-color: #fff;
+}
+#food{
+  background-color: #fff;
+}
+#zero{
+  background-color: #fff;
+}
+
+/* For Heading Section */
+
+nav.navbar-first {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: rgb(32, 18, 18);
+  transition: all ease 0.3s;
+}
+
+nav.navbar-first>ul {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+}
+
+nav.navbar-first>ul>li {
+  list-style: none;
+  flex: 10;
+  text-align: center;
+  margin-top: 5px;
+}
+
+nav.navbar-first>ul>li>a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+a:active {
+  color: #ddd;
+}
+
+nav.navbar-first>ul>li>a:hover {
+  color: rgb(184, 180, 180);
+}
+
+.navbar-second>a:hover {
+  color: rgb(32, 124, 245);
+}
+.navbar {
+  width: 75%;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 10px;
+  text-align: center;
+  border-bottom: #eee solid 1px;
+  transition: all ease 0.5s;
+}
+.navbar-second {
+  float: left;
+  margin-left: 200px;
+  width: 30%;
+  height: 40px;
+  transition: all ease 0.5s;
+  animation: slide_up ease 1.2s;
+}
+
+.head>a {
+  width: 25%;
+  float: left;
+  clear: both;
+  font-size: 2.5em;
+  font-weight: 200;
+  margin-left: 40px;
+  line-height: 0.7em;
+  color: rgb(90, 86, 86);
+  animation: slide_up ease 1.2s;
+}
+
+.navbar-second>a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  animation: slide_up ease 1.2s;
+}
+
+.nav-small {
+  padding-top: 10px;
+  display: none;
+}
+
+.nav-small>a {
+  color: #fff;
+}
+
+.fullscreen-nav {
+  width: 100%;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgb(32, 18, 18);
+  transition: all ease 0.5s;
+  animation: fade ease 1.2s;
+  display: none;
+}
+
+.fullscreen-nav ul {
+  width: 400px;
+  margin: 20px auto;
+}
+
+.fullscreen-nav ul li {
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.fullscreen-nav ul li a {
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 1em;
+}
+
+.fullscreen-nav ul li a:hover {
+  color: rgba(231, 226, 226, 0.801);
+  font-size: 1em;
+}
+
+/* For Buttons */
+
+.some-margin {
+  margin-top: 200px;
+  transition: all ease 0.5s;
+}
+
+.btn {
+  width: 100px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.btn-blue {
+  background-color: rgb(32, 124, 245);
+  float: right;
+  margin-right: 40px;
+  animation: slide_up ease 1.2s;
+  
+}
+
+.red-btn {
+  background-color: rgb(231, 41, 41);
+  height: 30px;
+  animation: slide_up ease 1.2s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+button.toggler {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  font-size: 1.2em;
+  margin-top: -15px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+/* for search box*/
+
+.search-box {
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  background-color: rgb(32, 18, 18);
+  padding-top: 5px;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  z-index: 10;
+  display: none;
+  box-sizing: border-box;
+  transition: all ease-in-out 0.5s;
+  -webkit-animation: fade .5s linear;
+  animation: fade .5s linear;
+  
+}
+
+.search-icon {
+  float: left;
+  margin-left: 50px;
+  
+}
+
+.search-box>input {
+  width: 400px;
+  height: 30px;
+  font-size: 10px;
+  background-color: rgb(32, 18, 18);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(151, 147, 147);
+  margin-left: 10px;
+  color: #ddd;
+  float: left;
+
+}
+
+.search-box>input::placeholder {
+  color: rgb(168, 163, 163);
+  font-size: 1.5em;
+}
+
+.fullscreen-nav>input {
+  width: 400px;
+  height: 30px;
+  font-size: 10px;
+  background-color: rgb(32, 18, 18);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(151, 147, 147);
+  margin-left: 10px;
+  color: #ddd;
+}
+
+.fullscreen-nav>input::placeholder {
+  color: rgb(168, 163, 163);
+  font-size: 1.5em;
+}
+
+.search-box>button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2em;
+  float: right;
+  margin-right: 20%;
+}
+
+.open {
+  display: block;
+}
+
+/* main body sections */
+
+.content {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 100px;
+  box-sizing: border-box;
+}
+
+.content>img {
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
+}
+
+.content>video {
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* for letters*/
+
+.heading-a {
+  font-size: 2.5em;
+  color: #555;
+  animation: slide_up ease 2s;
+}
+
+.heading-b {
+  font-size: 2.5em;
+  color: #777;
+  padding: 20px 10%;
+  animation: slide_up ease 2s;
+}
+
+.heading-c {
+  font-size: 1.5em;
+  color: #444;
+  padding: 20px 10%;
+  animation: slide_up ease 2.3s;
+}
+
+.heading-d {
+  font-size: 2em;
+  color: #777;
+  padding: 20px 10%;
+  animation: slide_up ease 2.8s;
+}
+
+.container {
+  width: 100%;
+  padding-bottom: 20px;
+  padding: 0;
+  background-image: url("../img/image_1.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dark-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.white {
+  color: #fff;
+  padding: 10px 25%;
+}
+
+.container-white {
+  
+  height: auto;
+  background-image: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.food-section {
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
+.box-1 {
+  width: 50%;
+}
+
+.box-2 {
+  width: 50%;
+  text-align: left;
+  margin-top: 30px;
+}
+.box-2 > .heading-c{
+  font-size: 1em
+}
+.box-1>img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-nav ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer-nav ul li {
+  list-style-type: none;
+  color: rgb(117, 114, 114);
+}
+
+.footer-nav ul li a {
+  color: rgb(143, 141, 141);
+  padding: 5px 10px;
+}
+
+.social {
+  margin-bottom: 70px;
+}
+
+.social a {
+  color: #111;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.footer-nav ul li a:hover,
+.social a:hover {
+  color: #555;
+}
+
+.sticky {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: #eee solid 1px;
+  transition: all ease 0.5s;
+}
+
+.open {
+  display: block;
+}
+
+
+
+@media screen and (max-width:1174px) {
+  .nav-small {
+    display: block;
+  }
+  .navbar-first>ul li {
+    display: none;
+  }
+  .navbar-first {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+  }
+  .navbar {
+    margin-top: 40px;
+   
+  }
+  .navbar-second {
+    display: none;
+  }
+  .head>a {
+    margin-left: 20px;
+  }
+  .btn-blue {
+    margin-right: 20px;
+  }
+  .content {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .heading-a,
+  .heading-b,
+  .heading-c,
+  .headdig-d {
+    padding: 10px 20px;
+  }
+  .content>img {
+    width: 70%;
+  }
+  video {
+    width: 70%;
+    
+  }
+}
+@media screen and (max-width: 980px){
+  
+  .heading-a{
+    font-size: 2em;
+  }
+  .heading-b{
+    font-size: 2em;
+  }
+  .heading-c{
+    font-size: 1em;
+  }
+  .heading-d{
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width:500px) {
+  .navbar{
+    width: 100%;
+  }
+  
+  .food-section {
+    display: block;
+  }
+  .box-1 {
+    width: 100%;
+  }
+  .box-1>img {
+    width: 100%;
+  }
+  .box-2 {
+    width: 100%;
+  }
+  .content>img {
+    width: 50%;
+  }
+  video{
+    width:50%;
+  }
+}

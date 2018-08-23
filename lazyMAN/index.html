@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>myTune template</title>
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fontawesome-free-5.2.0-web/fontawesome-free-5.2.0-web/css/all.min.css">
+</head>
+
+<body>
+  <!----showcase & nav---->
+  <header>
+    <nav class="navbar-first">
+      <div class="nav-small">
+        <button class="toggler" style="float: right" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a href="#home">
+          <i class="fa fa-leaf" style="float:left; margin-left: 10px"></i>
+        </a>
+        
+        <div id="fullscreen-nav" class="fullscreen-nav">
+          <input type="text" placeholder=" &#128270; Enter Keyword">
+
+          <ul>
+            <li>
+              <a href="#">Wakeup</a>
+            </li>
+            <li>
+              <a href="#">Watch TV</a>
+            </li>
+            <li>
+              <a href="#">listen music</a>
+            </li>
+            <li>
+              <a href="#">Switch on PC</a>
+            </li>
+            <li>
+              <a href="#">Start Coding</a>
+            </li>
+            <li>
+              <a href="#">now Sleep</a>
+            </li>
+            <li>
+          </ul>
+        
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="#" style="font-size: 20px">
+            <i class="fa fa-leaf"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">Wakeup</a>
+        </li>
+        <li>
+          <a href="#">Watch TV</a>
+        </li>
+        <li>
+          <a href="#">listen music</a>
+        </li>
+        <li>
+          <a href="#">Switch on PC</a>
+        </li>
+        <li>
+          <a href="#">Start Coding</a>
+        </li>
+        <li>
+          <a href="#">now Sleep</a>
+        </li>
+        <li>
+          <a href="#" onclick="openSearchBox()">
+            <i class="fas fa-search"></i>
+          </a>
+
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-shopping-bag"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="search-box" id="search-box">
+      <a class="search-icon" style="color:#fff">
+        <i class="fa fa-search"></i>
+      </a>
+      <input type="text" placeholder="Search apple.com">
+      <button class="close-search" onclick="closeSearchBox()">&#9747;</button>
+    </div>
+  </header>
+  <div id="home">
+    <div id="navbar" class="navbar">
+      <div class="head">
+        <a href="#home">lazyMAN</a>
+      </div>
+      <div class="navbar-second">
+        <a href="#home" class="scroll">Overview</a>
+
+        <a href="#music"class="scroll" >Music</a>
+
+        <a href="#video" class="scroll">Video</a>
+
+        <a href="#food" class="scroll">Charts</a>
+      </div>
+      <button class="btn btn-blue">Download</button>
+
+    </div>
+
+    <!----Section A----->
+    <section id="main">
+      <div class="content">
+        <div class="heading-a">lazyMAN.</div>
+        <div class="heading-b">Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+        <div class="heading-c" style="padding: 20px 20%">
+          <p>Quisque ultricies mollis augue vel aliquet. Praesent eget ullamcorper nibh. Phasellus viverra orci in elementum
+            aliquam. Nunc lobortis accumsan dolor, vitae facilisis quam mollis quis.</p>
+        </div>
+        <!--imagelink
+    <img src="https://purepng.com/public/uploads/large/purepng.com-macbookmacbooknotebookcomputersapple-inmacbook-familyapple-laptops-1701528361017oriy4.png" alt="mackbook">
+    -->
+        <img src="img/image_2.jpeg" alt="">
+      </div>
+
+    </section>
+
+    <!---- Section B----->
+    <section id="music">
+      <div class="content">
+        <div class="heading-a" style="color:black; font-weight:bold">
+          <i class="fa fa-leaf"></i> MUSIC</div>
+        <div class="heading-d">Millions of songs. Zero ads.</div>
+        <div class="heading-c">Aenean blandit nibh leo, ut suscipit ex luctus non. Proin libero erat, viverra et tellus dictum, blandit lobortis
+          metus. Morbi fringilla orci augue, at blandit justo sollicitudin eleifend. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas. </div>
+        <button class="btn red-btn">Try it Free*</button>
+        <div class="heading-e">consectetur adipisicing elit. Accusamus, temporibus?</div>
+        <div class="heading-c" style="font-size:150%">
+          <a href="#">Learn more about lazyMAN
+            <i class="fa fa-angle-double-right"></i>
+          </a>
+        </div>
+        <img src="img/image_3.jpeg" alt="">
+      </div>
+    </section>
+    <!----section C------->
+    <section id="video">
+      <div class="content">
+        <div class="heading-d">Suspendisse cursus tempus turpis vitae rhoncus.</div>
+        <div class="heading-c">Aenean blandit nibh leo, ut suscipit ex luctus non. Proin libero erat, viverra et tellus dictum, blandit lobortis
+          metus. Morbi fringilla orci augue, at blandit justo sollicitudin eleifend. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas.</div>
+        <a href="#">Read More
+          <i class="fa fa-angle-double-right"></i>
+        </a>
+        <video src="img/vid_1.mp4" type="video/mp4" controls="control"></video>
+      </div>
+    </section>
+    <!----Section D ------->
+    <section id="zero">
+      <div class="container">
+        <div class="dark-bg">
+          <div class="heading-d white">Pellentesque habitant morbi tristique, non. Proin libero erat.</div>
+          <div class="heading-c white">blandit nibh leo, ut suscipit ex luctus non. Proin libero erat, viverra et tellus dictum, blandit lobortis metus.
+            Morbi fringilla orci augue, at blandit justo sollicitudin eleifend. Pellentesque habitant morbi tristique senectus
+            et netus et malesuada fames ac turpis egestas.</div>
+        </div>
+      </div>
+    </section>
+    <!------Section E----->
+    <section id="food">
+      <div class="container-white">
+        <div class="food-section">
+          <div class="box-1">
+            <img src="img/image_4.png" alt="">
+          </div>
+          <div class="box-2">
+            <div class="heading-d" style="color:#555">Favourite Food?</div>
+            <div class="heading-c">blandit nibh leo, ut suscipit ex luctus non. Proin libero erat, viverra et tellus dictum, blandit lobortis metus.
+              Morbi fringilla orci augue, at blandit justo sollicitudin eleifend. Pellentesque habitant morbi tristique senectus
+              et netus et malesuada fames ac turpis egestas.
+              <br>
+              <a href="#">Read More
+                <i class="fa fa-angle-double-right"></i>
+              </a>
+            </div>
+
+            <div class="heading-c">Pellentesque habitant morbi tristique senectus et netus et
+              <br>
+              <a href="#">Read More
+                <i class="fa fa-angle-double-right"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------Footer------------->
+    <footer>
+      <div class="footer-nav">
+        <ul>
+          <li>
+            <a href="#home">
+              <i class="fa fa-home"></i>
+            </a>
+            <i class="fa fa-angle-right"></i>
+          </li>
+          <li>
+            <a href="#music">Music </a>
+            <i class="fa fa-angle-right"></i>
+          </li>
+          <li>
+            <a href="#food">Food </a>
+            <i class="fa fa-angle-right"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-snapchat"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </div>
+      <div class="copy">powered By lazyMAN &copy; 2018</div>
+    </footer>
+
+
+
+
+
+    <!--scripts---->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
